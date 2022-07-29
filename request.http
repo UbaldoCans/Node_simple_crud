@@ -1,0 +1,45 @@
+//users
+###
+post http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Elba Ester Gordillo",
+    "age": 180,
+    "email": "mamadechoki@correo.com"
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+###
+GET http://localhost:3000/api/users/62e2db2932d69c64f5fac6e3 HTTP/1.1
+content-type: application/json
+
+###
+DELETE http://localhost:3000/api/users/62e2db0332d69c64f5fac6e1 HTTP/1.1
+content-type: application/json
+
+###
+PUT http://localhost:3000/api/users/62e2dd4532d69c64f5fac6ec HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Elva Esther Gordillo",
+    "age": 190,
+    "email": "mamadechoki@correo.com"
+}
+
+//admin
+
+###
+post http://localhost:3000/api/admin HTTP/1.1
+content-type: application/json
+{
+    "name": "Elba Ester Gordill o",
+    "age": 180,
+    "email": "mamadechoki@correo.com",
+    "phone": "5534128749",
+    "role": "administrador"
+}
